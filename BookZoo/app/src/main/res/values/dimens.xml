@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_card_width">185dp</dimen>
+    <dimen name="book_card_height">285dp</dimen>
+</resources>

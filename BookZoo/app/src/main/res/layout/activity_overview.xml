@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverviewActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="370dp"
+        android:layout_height="350dp"
+        android:background="@drawable/filter_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="240dp"
+        android:layout_height="300dp"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26999998">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/book_title_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Book Title"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_image">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/book_overview_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Book Overview"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_title_overview">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/book_overview"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="A book overview, or summary, provides a concise overview of a book's main points, including plot, characters, and themes, without spoiling the ending. It helps readers get a general idea of the book's content and can be used to decide whether to read it. "
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_overview_text">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/add_to_cart_button_overview"
+        android:layout_width="360dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/filter_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="Add to cart"
+        android:textAllCaps="false"
+        android:textColor="#015D52"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_overview" />
+
+
+    <TextView
+        android:id="@+id/buy_now_overView"
+        android:layout_width="360dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/filter_background"
+        android:backgroundTint="#015D52"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="Buy Now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_cart_button_overview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
